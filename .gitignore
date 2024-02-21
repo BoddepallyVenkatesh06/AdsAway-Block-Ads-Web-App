@@ -1,0 +1,12 @@
+# Android specific
+local.properties
+
+# Gradle
+.cxx
+.externalNativeBuild
+.gradle
+build
+
+# IntelliJ IDEA
+.idea
+*.iml

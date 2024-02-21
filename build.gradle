@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
+    }
+}
+
+plugins {
+    id 'org.sonarqube' version '3.4.0.2513'
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+sonarqube {
+    properties {
+        // Root project information
+        property 'sonar.projectKey', 'org.adaway'
+        property 'sonar.organization', 'adaway'
+        property 'sonar.projectName', 'AdAway'
+        property 'sonar.projectVersion', '6.1.1'
+        property 'sonar.host.url', 'https://sonarcloud.io'
+    }
+}
